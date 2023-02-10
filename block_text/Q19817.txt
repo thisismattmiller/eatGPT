@@ -1,0 +1,1 @@
+Five radios are used, with the tuning dial of each bring rotated by motor. Thus, each radio picks up snatches of the broadcasts of all the local radio stations. To eliminate wiring from assembly components to the central pick-up point, signals from the radios are relayed to components by small FM transmitters.

@@ -1,0 +1,154 @@
+ACKNOWLEDGEMENTS	CREDITS	PRODUCTION STAFF
+
+Art Albiston Alexander Offset Co.
+W. Barry, Genie
+Productions, Inc.
+Mr. Botz
+
+Sam Kass Olga Kluver
+Suzanne Konigsberg
+Joel Lucas Colonel Lutz
+
+ADVERTISING-
+
+MAILER­ PUBLICITY-
+
+Howard Marks Advertising Norman Craig & Kummel, Inc.
+Maury Oren
+Ruder and Finn, Inc.
+
+COORDINATOR-	Alice Schwebke
+ASSISTANT COORDINATOR-	Jeff Strickler
+PRODUCTION    ASSISTANTS-	Nancy Rose Chandler
+Barbara Jarvis
+
+Jim Brady Gloria Bryant
+
+Howard Marks Mount Sinai Sleep
+
+PHOTOGRAPHER- Peter Moore
+
+TICKET TREASURER-	David Long
+
+Coltronics
+Ditta Agrippa , Rome Downtown Community
+School
+Joseph M. Fallica Federated Electronics Flexi-Optics
+Rubin Gorowitz
+
+Laboratory Maury Oren Linda Perlman Conrad Pologe John Powers
+Ralsen-Grocraft-Andors Press Corp.
+Suzan Rolfe
+
+POSTER­
+PRINTED BY PROGRAM­
+Edited by Conceived and
+designed by
+System diagrams
+
+Robert Rauschenberg
+RGA Press
+Pontus Hulten and Frank Konigsberg Pontus Hulten
+
+HOUSE MANAGER-	Ronald Hobbs
+ASSISTANT  HOUSE  MANAGER-	Tom Slater
+LIGHTING  DESIGNER-	Jennifer Tipton ASSISTANT LIGHTING DESIGNER-	Beverly Emmonds MASTER  RIGGER-	Jey Bell
+PROP  ARTIST-	Alphonse Schilling
+
+Sid Gross
+Hartig and Sons
+
+Joanne Santo
+Thelma Schoonmacher
+
+by	Herb Schneider
+
+ASSISTANT PROP-	Philip ldoni
+
+Sue Hartnett Eleanor Howard
+I. F. Jackson Electric Co. Nina Kaiden
+
+Weltz Ad Service Typography Co.
+Simone Whitman Georgelle Williams
+
+Layouts by
+
+Joe Fallica
+
+ACCOUNTANT-	Rubin Gorowitz
+ADVISOR-	Franklin Konigsberg
+
+
+Biographical Index of Participating Artists and Engineers
+
+Per Biorn comes from Copen­hagen. He designed and built the ground effect machine for Lucinda Childs and built a part of the decoding units for TEEM. He also set up the automated program for Yvonne Rainer. During  the  working  day  he   is in semi-conductor research.
+
+John Cage is from Los Angeles and  is  internationally known  as a composer and compositional innovator. He is also famous world-wide as a lecturer and mycologist. He tours regularly with the Merce Cunningham Dance Company as its musical director. He is the author of Silence, a collection of his stories and lectures.
+
+lrfan Camlibel was born in Istanbul. He works in absorption spectroscopy and has construc­ted the major part of the de­coders for the TEEM system­ - a formidable job.
+
+Lucinda Childs has been pre­senting mysterious and precise dances since the early days of the Judson Dance Theater. She went to Sarah Lawrence Cortese, and has studied with Mia Sla­venska and Merce Cunningham. One of her most beautiful works is performed on a street, ob­served by an audience in a building across the way; a tape prepared in advance describes the details of the walk-way and facades of the street.
+
+Cecil Coker was born in Ke­wanee, Mississippi. He made contributions to the synthetic speech computer. In 1965 Cecil designed a photocell switching circuit for John Cage's Philha­rmonic Hall concert. Last spring he designed a feedback sound generator for Bob Rauschenberg's "Linoleum." Cecil con­tributed to the early original plans for TEEM and initiated the proportional control system. He never fails to come up with solutions to complicated problems.
+
+Pete Cumminski born in Has­brouch Heights, N.J. works on formant vocoders and vocal tract analogs.  He has designed the general purpose pre-amplifier and the original circuit for the 20 Watt power amplifier. Pete also designed an amplifier for picking up body sounds for Alex Hay.
+
+Oyvind Fahlstrom was born in Brazil. He is a painter, poet, playwright and critic. Oyvind has worked in Sweden, Italy, France and the U.S.A. He represented Sweden at this year's Venice Bi­ennale. He has done several happenings in Stockholm. "Kiss­ es Sweeter than Wine" is his
+first theater work presented in America. His paintings are shown at the Janis Gallery.
+
+Ralph Flynn born in Andover, Massachusetts, used to manage a coffee house in Boston. He now works on high speed PCM repeaters. He has assisted Fred Waldhauer on the construction of the proportional control system and worked on other parts of TEEM.
+
+Alex Hay has firmly backed his friends' dances with performance and technical help. In the latter capacity he toured the world as Rauschenberg's assistant with the Cunningham Dance Company. His own choreography is laconic and painterly.  His solos are rarely completely solo in feeling because his music and sound tends to par­tner the performer. He is from Florida and shows his paintings at Leo Castelli.
+
+Deborah Hay was born in Brook­lyn . She has danced for many choreographers, including Merce Cunningham on his 1964 world tour. She has presented dances in Europe, Asia and America. The current tendency of her work toward even, endless, smooth presentation of relatively scant material dates from Summer 1965.
+
+Ken Harsell born in Elizabeth, N.J. works with reberation time measuring equipment design. He has designed and built the tone control circuit which enables an operator to control the gains at four points in the spectrum.
+
+Larry Heilos works on gas lasers. Larry located an infra­red TV pick up tube for Bob Rauschenberg. The   tube   was made in Japan and the only one available of broadcast standard at the time. Larry designed and built the mechanical parts for Debbie Hay's platforms. It was hard work.
+
+Peter Hirsch born in Germany likes to ski, fence, and paint. He works in underwater sound. Peter built and tested the 80KC Doppler sonar for Lucinda. The instrument is beautiful.
+
+Harold Hodges has a wife, six children and is a grandfather. He spent many years as a watch-maker but for the past ten years has worked in laser research. Harold was responsible for many of the technical devices in Jean Tingueley's
+"self-destructive machine" in 1960. He also built technical equipment for Bob Rauschen­berg's "Oracle." Harold designed and built the anti-missile missile and floating snowflakes for Oyvind Fahlstrom.
+
+Bela Julesz born in Budapest heads the Sensory and Perceptual Processes Department at Bell Labs. He works on computer pictorial data processing. He provided Alex Hay with n­ecessary information to initiate the building of the   low-noise, high-gain amplifier.
+
+Bill Kaminski works in the area of mobile radio research He designed and built 10 FM crystal control transmitters which are operated under an FCC experimental broadcast license. Bill also built the transmitters for Bob Rauschenberg's tennis rackets.
+
+Rudy Kerl a ham radio operator works in gas laser research. He has contributed most of the mechanical work on the TEEM system, built the SCR circuits and converted the commercial radio receivers to the crystal control.
+
+Bob Kieronski born in Philadelphia does research on digital systems. He has invented a machine called "Vochrome,'' the rather unconventional spectrum analyzer used by David Tudor. He also built a relay switching network which can be program med for 2 billion combinations.
+
+Louis Maggi works on magnetics used for memory and storage system. He constructed part of the power switching relays for controlling light and motors. Louis was born in Brooklyn.
+
+Max Matthews participated dur­ing original series of artist/engineer sessions and offered many ideas. He was born in Columbus, Nebraska. He is director of the Behaviorial Re­search Laboratory at Bell.
+
+Jim McGee comes from Illinois and works on holograms. He owns his own plane and is a ham operator. He has worked on tape recorders for Steve Paxton and built the program­ming drums which will be used by many of the artists.
+
+Stexe Paxton came to the East to study dance. He has since danced with several major modern dance companies, pdnci• pally Merce Cunningham's company. He produced two  series of concerts of the newer dance, Surplus Dance Theater in 1964 and First New York Theater Rally in 1965. During the last three years Steve has choreographed and performed works of his own widely in the U. S. and abroad.
+
+John Pierce broke the general awkwardness dudng the first meeting between the artists and engineers by telling Stretch Win­slow: "Tell them about some­thing they can use."
+
+Robert Rauschenberg born 1925 Port Arthur, Texas.     Painter. Theater experience: costume and sets Merce Cunningham 1955-65; Paul Taylor 1957-59; Lighitng for Cunningham, Taylor, Rainer, Hay, Dunn, group shows. Choreographed works: Collaboration  for  David  Tudor I96I. The Construction of Bos­ton I962. Pelican 1963. Shotput
+1964.   Elgin Tie 1964.  Spring Training  1965.  Map  Room   I, Map Room II 1965. Linoleum 1966. Open Score 1966. Bob recently bought an old mission house which served as headquarters for the preparations of  9  Evenings.
+
+Robby Robinson born in Atlantic City, holds a radio operator's license. He is the station operator and signs 15 radio broadcast stations on and off every day. Robby's first con­ tribution wasthe beautifully designed power amplifier for the TEEM system. He also designed the decoder units and worked with Herb Schneider as System Coordinator. Robby"s gen­eral contribution to the project has been invaluable. At Bell, he works in mobile telephone re­search.
+
+Herb Schnelder studied in Be­bek, Turkey and works on mobile radio systems. He is an excellent skier. Herb has taken over the performance planning for all of the artists filling their technical needs. Herb has an enormous capacity for coordin­ating and planning. The dia­grams in the program are his.
+Manfred Schroeder  is director of Bell's Acoustics, Speech and Mechanics Research Laboratory. He has been granted 32 pat­ents. Manfred suggested the original sonar device for Lucinda and participated in the early meetings between artists and engineers.
+
+Tony Trozzolo, born in Chicago, works in physical organic chemistry. He contributed many ideas on the properties of some chemical materials for Yvonne and Oyvind. Tony designed fiber optics-piping light and optical effects with material that glows in the dark.
+
+David Tudor has an international reputation as a performer of advanced music. This music gives the performer responsibilities often exceeding the composer's in the determination of the composition . David's authority in interpretation is high­ly esteemed. He has worked for many years with John Cage concertizing all over the world. 
+
+Fred Waldhauer, a native of Brooklyn, develops communications systems for long haul services. He has  also designed and developed the proportional control system, a unique con­tribution to the equipment. Fred and Cecil Coker finished the amplifier for Alex  on October 7th.
+
+Martin Wazowicz comes from Pennsylvania. He works on micro-wave propagation measurements. Marty built the amplifiers to  pick  up  muscle, heart  and  body  sounds  for Alex Hay.
+
+Robert Whitman's theater work dates from the early days  of the happenings. Some of his latest pieces enjoyed an extended run at the Martinique Theater and at Circle in the Square. His invention in costuming and architecture, his elegant use of cinema is tempered by roughshod ele­ments of subject and elemental theatrical techniques. The disparity in these elements results in strong and discontinuous images and unexpected humor.
+
+Stretch Winslow worked on the Manhattan Project during the war. He heads Bell Labs' Polymer Research and Development Department. Many of the challenging chemical pro­b lems were solved by Stretch.
+
+Witt Wlttnebert was born in Rahway, N.J. As assistant to Billy  Kluver in   laser research, Witt has become accustomed to communicating with artists. He built the photocell switching cir­cuits designed by Cecil Coker for Cage's Philharmonic Hall concert last year. For 9 Evenings Witt contributed to many areas such as building preamplifiers and all the electronic gear on Debbie's platforms.
+
+Dick Wolff developed Steve Paxton's radio loop system  and built the encoder. He works in superconducting research. Dick enjoys experimenting  with  Hi­-fi equipment and photography.

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E.A.T.GPT</title>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  </head>
+  <body>
+	
+    <style>
+      body{
+        
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        padding: 2em;
+      }
+
+      a{
+        color: #212427 !important;
+      }
+
+      .spin{
+        transform: ;
+      }
+      @keyframes rotating {
+        from {
+          transform: rotateZ(0deg);
+        }
+        to {
+
+          transform: rotateZ(360deg);
+        }
+      }
+      .rotating {
+        -webkit-animation: rotating 2s linear infinite;
+        -moz-animation: rotating 2s linear infinite;
+        -ms-animation: rotating 2s linear infinite;
+        -o-animation: rotating 2s linear infinite;
+        animation: rotating 10s linear infinite;
+      }
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+
+          opacity: 100;
+        }
+      }
+      .rotating {
+        animation: rotating 10s linear infinite, fadein 500ms linear;
+      }
+
+
+
+      #loading{
+        display: none;
+
+      }
+
+      #error{
+        text-align: center;
+        width:25%;
+        display: none;
+      }
+
+input[type=text]{
+    width:35%;
+    border:2px solid #aaa;
+    font-size: 2em;
+    border-radius:4px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+
+  #ask{
+    font-size: 2em;
+
+    margin: 0;
+    padding: 8px;
+    cursor: pointer;
+
+
+  }
+  #ask:hover{
+    transform: scale(1.1);
+    transition-duration: 250ms;
+  }
+  h1{
+    font-family: monospace;
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.5em;    
+  }
+  button{
+    background-color: white;
+  }
+  .doc-title{
+    font-size: 1.25em;
+  }
+  .textblock{
+    padding: 1em;
+    font-size: 1.35em;
+    background: #f5f5f585;
+  }
+  hr{
+    border: solid 1px black;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+  }
+  li a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  li a:hover{
+    text-decoration: underline;
+  }
+  #response{
+    margin-top:1em; margin-bottom: 2em;
+    font-family: monospace;
+    font-size: 2em;
+    padding-left: 1em;
+  }
+
+    </style>
+<div id="app">
+  <h1>E.A.T.GPT</h1>
+  <form @submit.prevent="askQuestion">
+    <input type="text" name="question" id="question" v-model="question" placeholder="Ask an E.A.T. question...">
+    <button type="submit" id="ask">Ask</button>
+  </form>
+
+
+
+
+<svg id="loading" class="spin" ref="loading" width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <path d="m83.555 52.891 0.1875-0.054687 3.3398-0.98438-7.2227-26.316-45.895-4.1992-20.98 23.773 8.2109 4.7422 0.34375 0.20313 24.191 13.965 37.637-11.074z"/>
+  <path d="m21.102 50.254-0.17187-0.10156-8.0547-4.6523v14.184l9.6875 5.5938 22.945 13.25v-14.184l-24.234-13.992z"/>
+  <path d="m83.844 53.211-0.1875 0.058593-0.1875 0.054688-37.57 11.051v14.227l19.535-5.7422 21.691-6.3828v-14.227z"/>
+ </g>
+</svg>
+
+<div id="error" ref="error">
+  <svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+   <g>
+    <path d="m68.078 37.039c-0.066406 0-0.12891 0.011719-0.19531 0.011719-0.70703-10.387-9.4648-18.691-19.98-18.691-11.059 0-20.055 8.9961-20.055 20.055 0 2.5078 0.47266 4.9258 1.3633 7.2188-0.49219-0.058593-0.98828-0.09375-1.4844-0.09375-6.957 0-12.621 5.6602-12.621 12.617s5.6602 12.621 12.621 12.621h41.414v-0.054688c8.8047-0.55469 15.805-7.8711 15.805-16.816 0-9.3008-7.5664-16.867-16.867-16.867zm0 31.859h-40.355c-5.9258 0-10.746-4.8203-10.746-10.746 0-5.9258 4.8203-10.742 10.746-10.742 0.94141 0 1.8789 0.12109 2.7852 0.36328 0.074219 0.023437 0.14844 0.015624 0.22266 0.015624 0.003906 0 0.007812 0.003907 0.015625 0.003907h0.011718c0.375-0.003907 0.70703-0.23047 0.85156-0.58594 0.007813-0.019531 0.019531-0.039062 0.027344-0.058593 0.007812-0.015626 0.015625-0.027344 0.019531-0.039063 0.015625-0.0625 0.007812-0.12109 0.011719-0.18359 0.003906-0.050781 0.011719-0.097656 0.007812-0.15234-0.007812-0.0625-0.027343-0.12109-0.050781-0.18359-0.015625-0.050782-0.015625-0.097656-0.039062-0.14453-1.2344-2.5078-1.8633-5.2109-1.8633-8.0312 0-10.023 8.1562-18.18 18.18-18.18 9.5312 0 17.469 7.5273 18.113 16.941-1.8125 0.21875-3.5625 0.72266-5.2266 1.5195-0.46875 0.22656-0.66406 0.78516-0.44141 1.25 0.22266 0.46875 0.78906 0.66016 1.25 0.44141 2.0312-0.97266 4.2109-1.4688 6.4805-1.4688 8.2695 0 14.992 6.7266 14.992 14.992s-6.7227 14.988-14.992 14.988z"/>
+    <path d="m57.5 56.562h-15c-0.51953 0-0.9375 0.41797-0.9375 0.9375s0.41797 0.9375 0.9375 0.9375h8.4375v2.8125c0 2.0664 1.6797 3.75 3.75 3.75s3.75-1.6836 3.75-3.75v-3.75c0-0.51953-0.41797-0.9375-0.9375-0.9375zm-2.8125 6.5625c-1.0312 0-1.875-0.83984-1.875-1.875v-2.8125h3.75v2.8125c0 1.0352-0.83984 1.875-1.875 1.875z"/>
+    <path d="m41.836 52.539c0.18359 0.18359 0.42187 0.27344 0.66406 0.27344 0.23828 0 0.48047-0.09375 0.66406-0.27344 0.36719-0.36719 0.36719-0.96094 0-1.3242l-1.2148-1.2148 1.2109-1.2109c0.36719-0.36719 0.36719-0.96094 0-1.3242-0.36719-0.36719-0.96094-0.36719-1.3242 0l-1.2109 1.2109-1.2109-1.2109c-0.36719-0.36719-0.96094-0.36719-1.3242 0-0.36719 0.36719-0.36719 0.96094 0 1.3242l1.2109 1.2109-1.2109 1.2109c-0.36719 0.36719-0.36719 0.96094 0 1.3242 0.18359 0.18359 0.42188 0.27344 0.66406 0.27344 0.23828 0 0.48047-0.09375 0.66406-0.27344l1.2109-1.2109z"/>
+    <path d="m61.914 47.461c-0.36719-0.36719-0.96094-0.36719-1.3242 0l-1.2109 1.2109-1.2109-1.2109c-0.36719-0.36719-0.96094-0.36719-1.3242 0-0.36719 0.36719-0.36719 0.96094 0 1.3242l1.207 1.2148-1.2109 1.2109c-0.36719 0.36719-0.36719 0.96094 0 1.3242 0.18359 0.18359 0.42188 0.27344 0.66406 0.27344 0.23828 0 0.48047-0.09375 0.66406-0.27344l1.2109-1.2109 1.2109 1.2109c0.18359 0.18359 0.42188 0.27344 0.66406 0.27344 0.23828 0 0.48047-0.09375 0.66406-0.27344 0.36719-0.36719 0.36719-0.96094 0-1.3242l-1.2188-1.2109 1.2109-1.2109c0.36719-0.36719 0.36719-0.96094 0.003906-1.3281z"/>
+   </g>
+  </svg>
+  <div>The API timed out, please try again.</div>
+</div>
+<div id="response">{{response}}</div>
+<div v-if="Object.keys(blocks).length > 0" style="font-size: 2em; margin-bottom: 0.75em;">References:</div>
+<div v-for="b in blocks">
+    <div class="doc-title">{{b.counter}}) {{b.parentDocLAbel}} (<a target="_blank" :href="'http://base.semlab.io/wiki/Item:'+b.id">{{b.id}}</a>)</div>
+    <div class="textblock">{{b.text}} <a href="#" @click.prevent="loadText($event,b)"> expand</a></div>
+    <div>
+      <div>Related Entities</div>
+      <ul>
+        <li v-for="e in b.entities"><a target="_blank" :href="'http://base.semlab.io/wiki/Item:'+e.qid">{{e.label}}</a> ({{e.typeLabel}})</li>
+      </ul>
+
+    </div>
+    <hr>
+
+</div>
+
+
+
+</div>
+
+  <script>
+
+ const { createApp } = Vue
+
+    let vueApp = createApp({
+      data() {
+        return {
+          question: '',
+
+
+          blocks: {},
+
+          response: "",
+
+
+
+
+        }
+
+      },
+
+
+      methods:{
+
+
+        loadText: async function(event,b){
+
+
+          let text = await fetch(b.textUrl, {headers: { 'charset' : 'utf-8'}})
+          text = await text.text()
+
+          text=text.replace(/\n/g,'<br><br>')
+
+
+          event.target.parentNode.innerHTML = text
+
+        },
+
+
+        askQuestion: async function(){
+
+          this.blocks={}
+          this.$refs.loading.style.display='block'
+          this.$refs.loading.classList.add('rotating')
+          this.$refs.loading.classList.add('fadein')
+          this.$refs.error.style.display='none'
+          this.response=''
+
+          let qResult
+          try{
+            qResult = await fetch('https://3h4c0tgq09.execute-api.us-east-1.amazonaws.com/prod/eat-gpt?' + new URLSearchParams({
+                q: this.question              
+            }))
+
+            qResult= await qResult.json()
+          }catch{
+
+            alert('The API timed out, please submit again.')
+            this.$refs.loading.classList.remove('rotating')
+            this.$refs.loading.style.display='none'
+            this.$refs.loading.classList.remove('fadein')
+            this.$refs.error.style.display='block'
+
+
+            return false
+          }
+
+          this.$refs.loading.classList.remove('rotating')
+          this.$refs.loading.style.display='none'
+          this.$refs.loading.classList.remove('fadein')
+
+
+          if (qResult && qResult.message && qResult.message == 'Internal Server Error'){
+            this.$refs.error.style.display='block'
+
+          }
+          this.getReferences(qResult.docs)
+          this.response = '> ' + qResult.response
+
+
+
+        },
+
+
+        getReferences: async function(qids){
+          let sparql = `
+              SELECT *
+              WHERE 
+              {
+                
+                VALUES ?block {<REPLACE>}
+                
+                  ?block wdt:P24 ?parentDoc.
+                  ?parentDoc rdfs:label ?parentDocLabel.
+                  ?block wdt:P19 ?text.
+                  ?block wdt:P20 ?textUrl.
+                  ?block wdt:P21 ?entities.
+                  ?entities rdfs:label ?entitiesLabel.
+                  ?entities wdt:P1 ?entitiesInstance.
+                  ?entitiesInstance  rdfs:label ?entitiesInstanceLabel.
+
+              }
+          `
+
+          sparql = sparql.replace("<REPLACE>", qids.map((v)=> `wd:${v}` ).join(' '))
+
+          let blockTextData = await fetch('https://query.semlab.io/proxy/wdqs/bigdata/namespace/wdq/sparql?' + new URLSearchParams({
+              query: sparql
+          }), {headers: { 'Accept' : 'application/json'}})
+
+          blockTextData = await blockTextData.json()
+          let blocks = {}
+
+
+          let excludeClass = ['Q19063','Q19070']
+
+          let counter = 1
+          for (let b of blockTextData.results.bindings){
+
+            let blockid = b.block.value.split('/')[b.block.value.split('/').length-1]
+            if (!blocks[blockid]){
+              blocks[blockid] = {
+                id: blockid,
+                entities:{},
+                counter: counter++
+              }
+            }
+
+            blocks[blockid].parentDocLAbel = b.parentDocLabel.value
+            blocks[blockid].text = b.text.value
+            blocks[blockid].textUrl = b.textUrl.value
+
+
+            let entityInstanceOf = b.entitiesInstance.value.split('/')[b.entitiesInstance.value.split('/').length-1]
+
+            if (excludeClass.indexOf(entityInstanceOf) ==-1){
+              let entId = b.entities.value.split('/')[b.entities.value.split('/').length-1]
+              blocks[blockid].entities[entId] = {
+                type: entityInstanceOf,
+                typeLabel: b.entitiesInstanceLabel.value,
+                label: b.entitiesLabel.value,
+                qid: entId
+              }
+            }
+
+
+          }
+
+
+          this.blocks = blocks
+
+        }
+
+
+
+
+
+      }
+
+
+    }).mount('#app')
+
+
+</script>
+
+  </body>
+</html>

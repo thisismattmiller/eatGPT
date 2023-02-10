@@ -1,0 +1,43 @@
+9 evenings: theatre & engineering
+Billy Kluver
+
+
+One of the problems faced by the contemporary artist is that everyone knows what art is. The scientist, by comparison, has it easy; nobody, not even fellow scientists, would dare to claim total knowledge about science. A scientist is, in fact, trained to balance between having no precon­ceived ideas and accepting reality.
+Today it seems incredible that only 50 years ago there existed a "right" science and a " wrong" science. Battles were fought and lost that now seem inconsequen­tial. At a recent APS meeting I heard Feynman talk about the reversibility of time while he was playing bongo drums on the view­ graph machine in front of an audi­ence of 5,000. In the next room, another scientist was explaining that he had found a statistical cor­ relation between the menstrual cycle in women and the period of the moon.  His audience  was 10.
+
+Contemporary art is in some­ what the same position as science was during the explosive years be­tween 1900 and 1910. Millions of people have become aware of con­ temporary art. For some art is an argument, an insult, a  joke, a toy, a pastime or a sacred object. Art has become something to prac­tically everybody. With the result that the artist must spend hours justifying himself and what he is doing. The end result is the undernourishing of one of the great resources of this country - the dedicated artist We are too hard on the artist.
+
+It is wrong, I feel, to make the withdrawal of the artist into his ivory tower a virtue. There are those who are interested in menstrual cycles. By the very fact of their participating in this project, the ten artists involved demonstrate a commitment not only to art but also to the presence of a general audience. Also, the involvement with professional technology is not only a logical extension of their previous work, but an approach towards the real world.
+
+Nine months ago when a group of artists and engineers met  for the first time this was not so clear as it is today. That  first  meeting on January 14th with a group of personally interested engineers from Bell Labs might well have been a flop. Everyone seemed to be scared of everyone else. No­ body knew quite what to say until one of the engineers suggested to another: "Let's tell them about something they can use." The ice was broken. About a dozen bull sessions followed during which the artists made suggestions of what they wanted and the engineers made counter suggestions. Many of the suggestions were wild and beautiful and unrealizable. By May we started to build equipment and tonight you will be able to see the results.
+
+It has not been as easy as it sounds. The artists had to show an extraordinary amount of pa­tience with the slow rate at which the engineer proceeds. And the engineer had to deal with the vagueness of the artist brought on by the fact that the artist had nothing to lay his hands on and work with. It was like lifting your­ self by the hair: if you don't do it all at once it does not work.
+
+The technical equipment built for "Nine Evenings" has cost over 30,000 dollars not counting invaluable help and advice given by specialists. It would, however, be foolish and irresponsible to describe this equipment as terrible extraordinary in technical terms. Compared to the missiles at Cape Kennedy and the large computers it is peanuts. This is rightly so. The artist cannot be expected to make use of the sophisticated aspects of technology, even if he have access to these, since he is confronted with a new material. What gives our equipment its unique value is that it was built for no other function but to be part of the performances. The equipment is built from scratch and is a result of the direct in­teraction between artists and en­gineers.
+
+But there is a other side to the equipment - commercial poten­tial of discoveries made as a result of its development. While working with Bob Whitman, we redis­covered a phosphor that has al­ready become an important tool in infrared laser research. Another example is the small power am­plifier which has also attracted commercial interest. The feed­ back to industry from the interac­tion between artists and engineers is very important. A direct involve­ment by industry is absolutely es­sential for any meaningful use of the potentials of professional tech­nology by the artists. As a result the artists will help open new doors for the engineers and the engi­neers will give a fresh license to be poetic. Technology has, I be­lieve, vast untapped possibilities to give pleasure and to make life more enjoyable. The Chinese fireworks 3,000 years ago were may­ be the first use of advanced tech­nology to give poetry, mystery and pleasure. I feel that our 9 Evenings performances will have some affinity to these long for­ gotten fireworks.
+
+9 Evenings is a truly cooperative venture. All participants had an equal voice in the direction and all responsibility was shared jointly. While no one individual is responsible for 9 Evenings, certain people deserve special recognition and thanks:
+
+Walter Gutman-our first contributor and friend;
+Vera List-to whome goes great thanks for giving this Festival her generous personal attention and support;
+Mr. and Mrs. Seymour Schweber-who gave us help at a critical time and furnished invaluable connections in the electronics industry;
+Mrs. Marie Christophe Thurman-a generous and enthusiastic supporter;
+Engineers who devoted their
+time freely:
+Cecil Coker-equipment de­sign;
+Fred Waldhauer-proportional control system;
+Robby Robinson-equipment design, building and coordination; 
+Herb Schneider-systems plan;
+Stretch Winslow - chemical problems;
+Peter Hirsch-Doppler sonar; 
+Joe Chislow and A. V. Robinett-for their help in getting our FCC license;
+AMP, lnc.-who donated the use of essential patchboard and card reader equipment for our systems planning;
+Alice Schwebke and Alphonse Schilling of the production staff for their dedication;
+Jill Jakes and Jasper Johns for their benevolent cooperation;
+Sue Hartnett for keeping La­fayette Street in order.
+Frank Konigsberg-for his ad­vice and unstinting help from the start of the project and for sym­pathically seeing us through it all;
+John Pierce and Marion Javits for their friendly support;
+Bob Rauschenberg-who de­serves more than anyone else the credit for the development, growth and achievement of the project. His amazing intuition has given us a language and tipped many of the decisions in favor of what now seems obvious. For all os us it has been a great pleasure to work with him.
+
+The objectives of 9 Evenings will be continued by Experiments in Art and Technology, Inc. This foundation will further the creative interaction between industry, engineers and artists. 9 Evenings is an experiment in the true sense of the word: its results are open for the future.
